@@ -178,6 +178,7 @@ pub(crate) struct BitReaderState {
 
 #[cfg(test)]
 mod tests {
+    use alloc::vec::Vec;
     use super::*;
     #[cfg(feature = "no_std")]
     use core2::io;

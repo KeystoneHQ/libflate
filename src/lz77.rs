@@ -5,6 +5,8 @@ pub use libflate_lz77::*;
 
 #[cfg(test)]
 mod tests {
+    use alloc::vec;
+    use alloc::vec::Vec;
     use super::*;
     use crate::deflate::symbol::Symbol;
 

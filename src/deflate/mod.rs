@@ -43,6 +43,7 @@ enum BlockType {
 
 #[cfg(test)]
 mod tests {
+    use alloc::vec::Vec;
     use super::*;
     use crate::lz77;
     #[cfg(feature = "no_std")]

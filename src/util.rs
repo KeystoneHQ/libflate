@@ -1,3 +1,7 @@
+#[cfg(feature = "no_std")]
+use alloc::vec;
+#[cfg(feature = "no_std")]
+use alloc::vec::Vec;
 #[cfg(all(test, feature = "no_std"))]
 use core2::io::{self, Read};
 #[cfg(all(test, not(feature = "no_std")))]

@@ -696,6 +696,10 @@ where
 
 #[cfg(test)]
 mod tests {
+    use alloc::borrow::ToOwned;
+    use alloc::string::ToString;
+    use alloc::vec;
+    use alloc::vec::Vec;
     use super::*;
     use crate::finish::AutoFinish;
     #[cfg(feature = "no_std")]

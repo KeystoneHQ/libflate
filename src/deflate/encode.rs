@@ -1,3 +1,5 @@
+#[cfg(feature = "no_std")]
+use alloc::vec::Vec;
 use super::symbol;
 use super::BlockType;
 use crate::bit;
@@ -439,6 +441,7 @@ where
 
 #[cfg(test)]
 mod tests {
+    extern crate std;
     use super::super::Decoder;
     use super::*;
     #[cfg(feature = "no_std")]
@@ -446,6 +449,7 @@ mod tests {
     #[cfg(not(feature = "no_std"))]
     use std::io::{Read as _, Write as _};
 
+    use std::println;
     #[test]
     fn test_issues_52() {
         // see: https://github.com/sile/libflate/issues/52

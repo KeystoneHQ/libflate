@@ -1190,6 +1190,7 @@ where
 
 #[cfg(test)]
 mod tests {
+    use alloc::vec;
     use super::*;
     use crate::finish::AutoFinish;
     #[cfg(feature = "no_std")]

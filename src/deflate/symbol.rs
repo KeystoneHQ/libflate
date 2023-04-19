@@ -1,3 +1,7 @@
+#[cfg(feature = "no_std")]
+use alloc::boxed::Box;
+#[cfg(feature = "no_std")]
+use alloc::vec::Vec;
 use crate::bit;
 use crate::huffman;
 use crate::huffman::Builder;
